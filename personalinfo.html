@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Personal Information</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="cts.css">
+	<link rel="shortcut icon" href="brain.png" />
+	<style>
+
+	</style>
+</head>
+
+
+
+<body>
+
+	<!--navbar-light= black text | bg-light=background light color-->
+	<nav class="navbar navbar-expand-lg fixed-top">
+
+	<!--navbar brand = header for navbar (make things stand out)| logo-->
+	<a class="navbar-brand" href="index.html"><img src="logo.jpg" class="rounded-circle" width="45" height="37"> CTS</a>
+
+	<ul class="navbar-nav mr-auto">
+	
+		<li class="nav-item">
+			<a class="nav-link" href="personalinfo.html">Test</a></li>
+	</ul>
+	<ul class="navbar-nav justify-content-end">
+		<li class="nav-item">
+			<a class="nav-link" href="admin.html">Login</a></li>
+	</ul>
+</nav>
+
+<!--form of information-->
+<main>
+<div class="bgpinfo">
+	<div class="jumbotron">
+		<div class="card">
+		<div class="card-body">
+			<h5 class="card-title">Purpose of the Study:</h5>
+			<b>This test contains 10 questions and aims to assess the critical thinking skills (CTS) of university computer science students. Each student is given 60 minutes to answer.</b></p>
+		</div></div>
+	<hr>
+		<h4>SECTION A : RESPONDENT PROFILE</h4>
+		<p>Instructions: Please tick the boxes that are applicable to you or specify otherwise.</p>
+
+		<form action="addinfo.php" method="post">
+			<ol>
+				<li><div class="form-group">
+					<p>Registration / Matriculation number : </p>
+					<input type="text" class="form-control" name="matricnum"></div></li>
+
+				<li><div class="form-group">
+					<label for="uni">Name of University : </label>
+					<input type="text" class="form-control" name="uni"></div></li>
+
+				<li><div class="form-group">
+					<label for="year">Year of Study (First, Second, Third, etc) : </label>
+						 			
+					<select name = "year">
+					<option value="first">First year</option>
+					<option value="second">Second year</option>
+					<option value="third">Third year</option>
+					<option value="fourth">Fourth year</option>
+					</select>
+				<li><div class="form-group">
+					<label for="gender">Gender :</label>
+					<div class="radio">
+						<label><input type="radio" name="gender" value="Male">Male</label></div>
+					<div class="radio">
+						<label><input type="radio" name="gender" value = "Female">Female</label></div></div></li>
+
+				<li><div class="form-group">
+				<label for="age">Age Group : </label>
+				<div class="radio">
+					<label><input type="radio" name="age" value ="Below 18 years" >Below 18 years</label></div>
+				<div class="radio">
+					<label><input type="radio" name="age" value ="18-21 years" >18 - 21 years</label></div>
+				<div class="radio">
+					<label><input type="radio" name="age" value ="22-25 years">22 - 25 years</label></div>
+				<div class="radio">
+					<label><input type="radio" name="age" value ="Above 25 years">Above 25 years</label></div></div></li>
+
+				<li><div class="form-group">
+				<label for="ethnic">Ethnic Group : </label>
+				<div class="radio">
+					<label><input type="radio" name="ethnic" value = "Malay" >Malay</label></div>
+					
+					
+					
+				<div class="radio">
+					<label><input type="radio" name="ethnic" value = "Chinese">Chinese</label></div>
+				<div class="radio">
+					<label><input type="radio" name="ethnic" value = "Indian">Indian</label></div>
+					
+					<form class="form-inline">
+	  <label for="ethnic" class="mr-sm-2">Other, please specify :</label>
+	  <input type="text" class="form-control mb-2 mr-sm-2" name="ethnic2">
+	</form>
+				<li><div class="form-group">
+				<label for="nationality">Nationality : </label>
+				<div class="radio">
+					<label><input type="radio" name="nationality" value = "Malaysian">Malaysian</label></div>
+				<div class="radio">
+					<label><input type="radio" name="nationality" value = "Chinese">Chinese (China)</label></div>
+				<div class="radio">
+					<label><input type="radio" name="nationality" value = "Indonesian">Indonesian</label></div>
+				<div class="radio">
+					<label><input type="radio" name="nationality" value = "Pakistani">Pakistani</label></div>
+				<div class="form-group">
+					<label for="nationality">Other, please specify : </label>
+					<input type="text" class="form-control" name="nationality2"></div></div></li>
+				<br>
+				<input type="submit" class="button" name="insert" value="Next" action = "exam.html">
+			
+				
+
+			</ol>
+		</form>
+
+</div></div>
+</main>
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Visit us at <a href="cts@um.edu.my" data-toggle="tooltip" title="Visit w3schools">cts@um.edu.my</a></p>
+</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
